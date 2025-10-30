@@ -1,0 +1,83 @@
+/* COMMON CSS STRUCTURE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* COMMON CSS STRUCTURE */
+
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.passwordForm {
+    max-width: 350px;
+    width: 100%;
+    position: relative;
+}
+
+.passwordForm .inputWraper {
+    position: relative;
+}
+
+.passwordForm .inputWraper input {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.passwordForm .inputWraper input:focus{
+    border-color: dodgerblue;
+}
+
+.passwordForm .inputWraper button {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #353434;
+    cursor: pointer;
+}
+
+.error {
+    font-size: 14px;
+    color: red;
+    position: absolute;
+    bottom: -20px;
+    left: 10px;
+
+}

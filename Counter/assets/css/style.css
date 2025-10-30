@@ -1,0 +1,73 @@
+/* COMMON CSS STRUCTURE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+/* COMMON CSS STRUCTURE */
+
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.counter{
+    display: flex;
+    width: 800px;
+}
+
+.counter *{
+    width: 33.33%;
+    height: 60px;
+    border: none;
+    font-size: 20px;
+}
+
+.counter .decrement{
+    background: lightcoral;
+    border-top-left-radius: 15px;   
+    border-bottom-left-radius: 15px; 
+    font-size: 24px;
+    color: white;
+
+}
+
+.counter .increment{
+    background: lightseagreen;
+    border-top-right-radius: 15px;   
+    border-bottom-right-radius: 15px;
+    font-size: 24px;
+    color: white;
+
+}
+
+.counter input{
+    border: 0.5px solid #aaa;
+    text-align: center;
+}
