@@ -1,0 +1,112 @@
+/* COMMON CSS STRUCTURE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+/* COMMON CSS STRUCTURE */
+
+
+nav{
+    background-color: crimson;
+    padding: 10px 0;
+}
+
+nav button{
+    width: 30px;
+    height: 30px;
+    background: whitesmoke;
+    border: none;
+    border: 0.5px solid black;
+    border-radius: 6px;
+}
+
+.sidebar{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.35s ease;
+}
+.sidebar.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebarCnt{
+    background: whitesmoke;
+    height: 100vh;
+    width: 80%;
+    max-width: 350px;
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+    transform: translateX(-100%);
+    transition: 0.35s ease;
+}
+
+.sidebar.active .sidebarCnt{
+    transform: translateY(0%);
+}
+
+.sidebarLogo img{
+    width: 180px;
+}
+
+.sidebarMenu{
+    margin-top: 30px;
+}
+
+.sidebarMenu ul li{
+    padding: 8px 0;
+}
+
+.sidebarMenu ul li a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.sidebarCTA {
+    width: 200px;
+    margin: 20px auto;
+}
+.sidebarCTA button{
+    padding: 15px 10px ;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background: crimson;
+    color: white;
+}
+
+.cancel{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
