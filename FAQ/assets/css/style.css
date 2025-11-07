@@ -1,0 +1,79 @@
+/* COMMON CSS STRUCTURE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+/* COMMON CSS STRUCTURE */
+
+
+
+
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.faq{
+    border: 1px solid #aaa;
+    margin-bottom: 20px;
+    
+}
+
+.faq .faqHeader{
+    border-bottom: 1px solid #aaa;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 20px;
+}
+.faq .faqHeader span{
+    transition: 0.3s ease;
+}
+
+.faq.active .faqHeader span{
+    transform: rotate(180deg);
+}
+
+.faqBody .faqCnt{
+    padding: 15px;
+    text-align: justify;
+}
+
+.faqBody{
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.35s ease-in;
+}
+
+.faq.active .faqBody{
+    max-height: 100vh;
+    overflow: auto;
+}
